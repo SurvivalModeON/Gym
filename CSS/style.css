@@ -1,0 +1,148 @@
+@import "/CSS/reset.css";
+
+:root {
+  --darkgrey: #27272a;
+  --darkergrey: #1a1818;
+  --mainred: #ed1c24;
+  --white: #ffffff;
+
+  --red-text: var(--mainred);
+  --white-text: var(--white);
+
+  --white-bg: var(--white);
+  --dark-bg: var(--darkgrey);
+  --red-bg: var(--mainred);
+
+  --dark-border: var(--darkergrey);
+}
+
+/* .wrapper {
+  min-height: 100vh;
+} */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px 0 50px;
+}
+
+.logo {
+  /* display: block; */
+  width: 150px;
+  height: 150px;
+}
+
+.header_contacts_item_icon_phone,
+.header_contacts_item_icon_gmail {
+  width: 30px;
+  height: 30px;
+}
+
+.header_contacts_item_text {
+  font-family: "Roboto", sans-serif;
+  padding-left: 10px;
+  color: var(--white-text);
+  cursor: pointer;
+}
+
+.header_row {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: auto;
+  background: var(--dark-bg);
+}
+
+/* header second row CSS start */
+
+.header_first_row {
+  height: 105px;
+  /* display: block; */
+}
+
+.pages_list {
+  background: var(--dark-bg);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  /* padding: 20px 0px; */
+}
+
+.header_second_row {
+  height: 85px;
+}
+
+.header_second_row .pages_list_item_url {
+  background: var(--red-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 175px;
+  height: 40px;
+  transform: skewX(-30deg);
+}
+
+.header_second_row .pages_list_item_url span {
+  font-family: "Roboto", sans-serif;
+  display: block;
+  transform: skewX(30deg);
+  font-weight: 700;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  background: var(--dark-bg);
+}
+
+ul li {
+  padding: 5px 0 5px 5px;
+  display: inline-block;
+  position: relative;
+  line-height: 21px;
+  text-align: left;
+}
+
+ul li a {
+  font-family: "Roboto", sans-serif;
+  display: block;
+  color: var(--white-text);
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: var(--red-text);
+}
+
+.header_second_row .pages_list_item_url:hover {
+  background: var(--dark-bg);
+  border: solid 1px var(--red-bg);
+}
+
+ul li ul.dropdown {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  width: auto;
+  min-width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: solid 1px var(--dark-border);
+  left: 0;
+}
+ul li:hover ul.dropdown {
+  display: block;
+}
+ul li ul.dropdown li {
+  display: block;
+}
