@@ -35,7 +35,6 @@
 }
 
 .logo {
-  /* display: block; */
   width: 150px;
   height: 150px;
 }
@@ -75,7 +74,6 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  /* padding: 20px 0px; */
 }
 
 .header_second_row {
@@ -135,7 +133,7 @@ ul li ul.dropdown {
   z-index: 10;
   width: auto;
   min-width: 100%;
-  margin-top: 10px;
+  margin-top: 5px;
   padding: 10px;
   border: solid 1px var(--dark-border);
   left: 0;
