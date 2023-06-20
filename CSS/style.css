@@ -199,6 +199,10 @@ ul li ul.dropdown li {
   color: var(--white-text);
 }
 
+.info_block_title a:hover {
+  color: var(--red-text);
+}
+
 /* info block end */
 
 /* subcscribe conent start */
@@ -237,7 +241,7 @@ ul li ul.dropdown li {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 0 10px 0 200px; /*                                         acum aici ma joc */
+  padding: 0 10px 0 200px;
 }
 
 .right_part .subscribe_email_imput {
@@ -265,6 +269,11 @@ ul li ul.dropdown li {
   z-index: 1;
 }
 
+.subscribe_btn:hover {
+  color: var(--white-text);
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+}
+
 .decormessage {
   position: absolute;
   max-width: 210%;
@@ -279,3 +288,5 @@ ul li ul.dropdown li {
   height: 58px;
   padding-right: 10px;
 }
+
+/* subscribe secction end */
