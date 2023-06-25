@@ -41,6 +41,12 @@ div.container {
   padding: 0;
 }
 
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -413,7 +419,6 @@ div.container {
 }
 
 .toggle_button img {
-  display: absolute;
   max-height: 2em;
   transform: rotate(90deg);
   margin-left: 40px;
