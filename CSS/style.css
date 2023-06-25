@@ -477,8 +477,8 @@ div.container {
   text-align: left;
   cursor: pointer;
   outline: none;
-  /* border: 2px solid rgb(170, 79, 79); */
 }
+
 .dropdown-btn span {
   padding-left: 170px;
   color: var(--red-text);

@@ -1,3 +1,5 @@
+
+//  mobile menu toggle button 
 const targetDiv = document.getElementById("mobileSideNav");
 const btn = document.getElementById("toggle-button");
 btn.onclick = function () {
@@ -11,7 +13,6 @@ btn.onclick = function () {
 
 //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
 let dropdown = document.getElementsByClassName("dropdown-btn");
-let i;
 
 for (i = 0; i < dropdown.length; i++) {
   dropdown[i].addEventListener("click", function() {
@@ -24,3 +25,6 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }
+
+// check if display "block" exist, then turn off others
+
