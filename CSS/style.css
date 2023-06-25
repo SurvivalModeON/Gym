@@ -11,10 +11,12 @@
   --red-text: var(--mainred);
   --white-text: var(--white);
   --grey-text: var(--grey);
+  --dark-text: var(--darkgrey);
 
   --white-bg: var(--white);
   --dark-bg: var(--darkgrey);
   --red-bg: var(--mainred);
+  --darkwhite-bg: var(--grey);
 
   --dark-border: var(--darkergrey);
   --darkwhite-border: var(--darkwhite);
@@ -133,13 +135,15 @@
   border: solid 1px var(--red-bg);
 }
 
-ul {
+/* keep ATENTION !!!! TO BOT */
+
+.header_second_row ul {
   padding: 0;
   list-style: none;
   background: var(--dark-bg);
 }
 
-ul li {
+.header_second_row ul li {
   padding: 5px 0 5px 5px;
   display: inline-block;
   position: relative;
@@ -147,7 +151,7 @@ ul li {
   text-align: left;
 }
 
-ul li a {
+.header_second_row ul li a {
   font-family: "Roboto", sans-serif;
   display: block;
   color: var(--white-text);
@@ -155,11 +159,11 @@ ul li a {
   transition: 0.3s;
 }
 
-ul li a:hover {
+.header_second_row ul li a:hover {
   color: var(--red-text);
 }
 
-ul li ul.dropdown {
+.header_second_row ul li ul.dropdown {
   display: none;
   position: absolute;
   z-index: 10;
@@ -170,12 +174,14 @@ ul li ul.dropdown {
   border: solid 1px var(--dark-border);
   left: 0;
 }
-ul li:hover ul.dropdown {
+.header_second_row ul li:hover ul.dropdown {
   display: block;
 }
-ul li ul.dropdown li {
+.header_second_row ul li ul.dropdown li {
   display: block;
 }
+
+/* keep ATENTION !!!! TO TOP*/
 
 /* header end */
 
@@ -392,6 +398,7 @@ ul li ul.dropdown li {
 }
 
 /* mobile headder start  */
+
 .mobile_header_container {
   width: 100%;
   min-height: 50px;
@@ -422,7 +429,80 @@ ul li ul.dropdown li {
   font-family: "Roboto", sans-serif;
   color: var(--red-text);
 }
-/* mobile header end */
+
+.mobile_pages_list_container {
+  position: relative;
+}
+
+.mobile_nav_wrapper {
+  position: absolute;
+  width: 100vw;
+  min-height: 100vh;
+  background: rgba(170, 167, 167, 0.6);
+  z-index: 9;
+}
+/* exxxxperimeeent!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! start*/
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: auto;
+  min-width: 300px;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: var(--darkwhite);
+  overflow-x: hidden;
+  padding-top: 20px;
+  margin-top: 1px;
+  margin-left: 20px;
+  border-radius: 0 0 8px 8px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a,
+.dropdown-btn {
+  font-family: "Roboto", sans-serif;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--dark-text);
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover,
+.dropdown-btn:hover {
+  color: var(--red-text);
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  color: rgb(147, 147, 147);
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  padding-left: 8px;
+}
+
+/* exxxxperimeeent !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!end!*/
+
+/* MOBILE NAV END */
 
 /* responsive start  */
 @media (max-width: 1200px) {
@@ -432,19 +512,9 @@ ul li ul.dropdown li {
 
   .mobile_header_container {
     display: flex;
-    position: relative;
   }
 
   .mobile_pages_list_container {
     display: block;
-    position: absolute;
-    top: 100px;
-    right: 0;
-    left: 0;
-  }
-
-  .mobile_pages_list_item {
-    width: 100%;
-    flex-direction: column;
   }
 }
