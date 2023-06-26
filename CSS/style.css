@@ -196,6 +196,123 @@ a:visited {
 
 /* header end */
 
+/* mobile headder start  */
+
+.mobile_header_container {
+  width: 100%;
+  min-height: 50px;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--dark-bg);
+  display: none;
+}
+
+.toggle_button img {
+  max-height: 2em;
+  transform: rotate(90deg);
+}
+
+.mobile_header_logo img {
+  display: flex;
+  max-height: 100px;
+}
+
+.mobile_header_language_button a {
+  font-family: "Roboto", sans-serif;
+  color: var(--red-text);
+}
+
+.mobile_nav_wrapper {
+  position: relative;
+  display: none;
+}
+
+.mobile_pages_list_container {
+  position: absolute;
+  width: 100vw;
+  min-height: 100vh;
+  background: rgba(170, 167, 167, 0.6);
+  z-index: 9;
+}
+/* exxxxperimeeent!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! start*/
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: auto;
+  min-width: 320px;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: var(--darkwhite);
+  overflow-x: hidden;
+  margin-top: 1px;
+  margin-left: 20px;
+  border-radius: 0 0 8px 8px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a,
+.dropdown-btn {
+  font-family: "Roboto", sans-serif;
+  padding: 6px 8px 6px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--dark-text);
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.dropdown-btn span {
+  padding-left: 170px;
+  color: var(--red-text);
+}
+
+/* On mouse-over */
+.sidenav a:hover,
+.dropdown-btn:hover {
+  color: var(--red-text);
+}
+
+.mobile_nav_phone_nr {
+  padding: 10px 0 0 20px;
+  border-bottom: 2px solid rgb(213, 213, 213);
+}
+
+.mobile_nav_phone_icon {
+  width: 25px;
+  height: 25px;
+}
+
+.mobile_nav_phone_nr a {
+  font-size: 15px;
+}
+
+.abonaments_link {
+  border-bottom: 2px solid rgb(213, 213, 213);
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  color: rgb(147, 147, 147);
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  padding-left: 8px;
+}
+
+/* exxxxperimeeent !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!end!*/
+
+/* MOBILE NAV END */
+
 /* banner start  */
 
 .banner_container {
@@ -398,6 +515,8 @@ div.container > div.row {
   z-index: 1;
 }
 
+/*  subscribe button */
+
 .subscribe_btn {
   font-size: 18px;
   width: 324px;
@@ -438,13 +557,11 @@ div.container > div.row {
     left: -105px;
   }
 }
-@media (max-width: 830px) {
+@media (max-width: 842px) {
   .decormessage {
     display: none;
   }
 }
-
-/* right part of subscribe content end */
 
 .end_part {
   width: 298px;
@@ -467,128 +584,6 @@ div.container > div.row {
   margin-bottom: 30px;
 }
 /* gallery secction end  */
-
-/* mobile headder start  */
-
-.mobile_header_container {
-  width: 100%;
-  min-height: 50px;
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--dark-bg);
-  display: none;
-}
-
-.toggle_button img {
-  max-height: 2em;
-  transform: rotate(90deg);
-  margin-left: 40px;
-}
-
-.mobile_header_logo img {
-  display: flex;
-  max-height: 100px;
-}
-
-.mobile_header_language_button {
-  margin-right: 40px;
-}
-
-.mobile_header_language_button a {
-  font-family: "Roboto", sans-serif;
-  color: var(--red-text);
-}
-
-.mobile_nav_wrapper {
-  position: relative;
-  display: none;
-}
-
-.mobile_pages_list_container {
-  position: absolute;
-  width: 100vw;
-  min-height: 100vh;
-  background: rgba(170, 167, 167, 0.6);
-  z-index: 9;
-}
-/* exxxxperimeeent!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! start*/
-
-/* Fixed sidenav, full height */
-.sidenav {
-  height: auto;
-  min-width: 320px;
-  position: absolute;
-  z-index: 5;
-  top: 0;
-  left: 0;
-  background-color: var(--darkwhite);
-  overflow-x: hidden;
-  margin-top: 1px;
-  margin-left: 20px;
-  border-radius: 0 0 8px 8px;
-}
-
-/* Style the sidenav links and the dropdown button */
-.sidenav a,
-.dropdown-btn {
-  font-family: "Roboto", sans-serif;
-  padding: 6px 8px 6px 20px;
-  text-decoration: none;
-  font-size: 20px;
-  color: var(--dark-text);
-  display: block;
-  border: none;
-  background: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
-}
-
-.dropdown-btn span {
-  padding-left: 170px;
-  color: var(--red-text);
-}
-
-/* On mouse-over */
-.sidenav a:hover,
-.dropdown-btn:hover {
-  color: var(--red-text);
-}
-
-.mobile_nav_phone_nr {
-  padding: 10px 0 0 20px;
-  border-bottom: 2px solid rgb(213, 213, 213);
-}
-
-.mobile_nav_phone_icon {
-  width: 25px;
-  height: 25px;
-}
-
-.mobile_nav_phone_nr a {
-  font-size: 15px;
-}
-
-.abonaments_link {
-  border-bottom: 2px solid rgb(213, 213, 213);
-}
-
-/* Add an active class to the active dropdown button */
-.active {
-  color: rgb(147, 147, 147);
-}
-
-/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-.dropdown-container {
-  display: none;
-  padding-left: 8px;
-}
-
-/* exxxxperimeeent !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!end!*/
-
-/* MOBILE NAV END */
 
 /* footer secction start  */
 
@@ -659,6 +654,12 @@ div.container > div.row {
 }
 /* footer third secction end */
 
+@media (min-width: 576px) {
+  .footer_container {
+    flex-direction: row;
+  }
+}
+
 /* responsive start  */
 @media (max-width: 1199px) {
   .header {
@@ -676,10 +677,6 @@ div.container > div.row {
   .right_part {
     padding: 0;
   }
-
-  /* .decormessage {
-    display: none;
-  } */
 
   .end_part {
     display: none;
@@ -708,11 +705,5 @@ div.container > div.row {
     font-size: 20px;
     font-weight: bold;
     margin: 15px 0 15px 0;
-  }
-}
-
-@media (min-width: 576px) {
-  .footer_container {
-    flex-direction: row;
   }
 }
