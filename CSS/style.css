@@ -240,7 +240,7 @@ a:visited {
 /* Fixed sidenav, full height */
 .sidenav {
   height: auto;
-  min-width: 320px;
+  min-width: 250px;
   position: absolute;
   z-index: 5;
   top: 0;
@@ -654,9 +654,9 @@ div.container > div.row {
 }
 /* footer third secction end */
 
-@media (min-width: 576px) {
+@media (max-width: 842px) {
   .footer_container {
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 
@@ -680,10 +680,6 @@ div.container > div.row {
 
   .end_part {
     display: none;
-  }
-
-  .footer_container {
-    flex-direction: column;
   }
 
   .footer_left_block {
