@@ -490,7 +490,6 @@ div.container > div.row {
 .left_part {
   max-width: 310px;
   width: 100%;
-  padding: 0 0 20px 0;
 }
 
 /* right part of subscribe content start */
@@ -499,6 +498,8 @@ div.container > div.row {
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 0 10px 0 200px;
 }
 
@@ -534,14 +535,14 @@ div.container > div.row {
   transform: skewX(30deg);
   color: var(--white-text);
 }
-.subscribe_btn span:hover {
-  color: var(--red-text);
-}
 
 .subscribe_btn:hover {
   background: var(--dark-bg);
-
   border: 1.5px solid var(--red-bg);
+}
+
+.subscribe_btn:hover span {
+  color: var(--red-text);
 }
 
 .decormessage {
@@ -549,6 +550,7 @@ div.container > div.row {
   max-width: 210%;
   top: -12px;
   left: 70px;
+  pointer-events: none;
 }
 
 @media (max-width: 1199px) {
@@ -674,6 +676,9 @@ div.container > div.row {
     flex-direction: column;
   }
 
+  .left_part {
+    padding-bottom: 20px;
+  }
   .right_part {
     padding: 0;
   }
