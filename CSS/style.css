@@ -1,5 +1,3 @@
-@import "/CSS/reset.css";
-
 :root {
   --darkgrey: #27272a;
   --darkergrey: #1a1818;
@@ -20,6 +18,11 @@
 
   --dark-border: var(--darkergrey);
   --darkwhite-border: var(--darkwhite);
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .flex_center {
@@ -470,7 +473,7 @@ div.container > div.row {
   align-items: center;
   justify-content: center;
   padding: 30px 0 30px 0;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   background: var(--dark-bg);
   flex-direction: row;
 }
@@ -574,17 +577,102 @@ div.container > div.row {
 /* subscribe secction end */
 
 /* gallery section start  */
+
+.gallery_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 35px auto;
+}
+
 .gallery_header {
-  width: 100%;
-  height: 80px;
+  min-width: 100%;
+  min-height: 100%;
   background: var(--grey-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* display: none; */
 }
-.gallery_body {
+.gallery_header a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+/* experioment!!!!!!!!!!!!!!!!!!!!!!!!!!!start */
+
+.carousel {
+  width: 30vw;
+  height: 400px;
+  position: relative;
+}
+
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+}
+
+.slide > img {
+  display: block;
   width: 100%;
-  height: 700px;
-  background: var(--darkgrey);
-  margin-bottom: 30px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+.carousel-button.next {
+  right: 1rem;
+}
+
+/* experioment!!!!!!!!!!!!!!!!!!!!!!!!!!!end */
+
 /* gallery secction end  */
 
 /* footer secction start  */
