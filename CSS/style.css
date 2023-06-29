@@ -672,13 +672,13 @@ div.container > div.row {
 
 /* experioment!!!!!!!!!!!!!!!!!!!!!!!!!!!start */
 
-.carousel {
+/* .carousel {
   width: 300px;
   height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* position: relative; */
+  position: relative;
 }
 
 .carousel > ul {
@@ -688,7 +688,7 @@ div.container > div.row {
 }
 
 .slide {
-  /* position: absolute; */
+  position: absolute;
   display: inline;
   inset: 0;
   opacity: 0;
@@ -728,7 +728,7 @@ div.container > div.row {
 .carousel-button.prev:hover {
   height: 100%;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.3), transparent);
-  /* left: 1rem; */
+  left: 1rem;
 }
 
 .carousel-button.next {
@@ -738,7 +738,7 @@ div.container > div.row {
 .carousel-button.next:hover {
   height: 100%;
   background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.3));
-}
+} */
 
 /* experioment!!!!!!!!!!!!!!!!!!!!!!!!!!!end */
 

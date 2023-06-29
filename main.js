@@ -1,4 +1,13 @@
 
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
 // MOBILE HEADER START 
 
 $("#dropdown-button").click(function() {
