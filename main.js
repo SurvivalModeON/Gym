@@ -1,17 +1,64 @@
+
+// MOBILE HEADER START 
 // open and close mobile nav bar
 const targetDiv = document.getElementById("mobileSideNav");
-const targetDiv2 = document.getElementById("dropdown-button1");
 
-const btn = document.getElementById("dropdown-button");
-btn.onclick = function myFunction() {
+const dropDownBtn = document.getElementById("dropdown-button");
+const dropDownBtn1 = document.getElementById("dropdown-button1");
+dropDownBtn.onclick = function myFunction() {
   if (targetDiv.style.display !== "none") {
     targetDiv.style.display = "none";
-    targetDiv2.style.display = "none";
+    dropDownBtn1.style.display = "none";
   } else {
     targetDiv.style.display = "block";
-    targetDiv2.style.display = "block";
+    dropDownBtn1.style.display = "block";
   }
 };
+
+// UL open and close 
+
+$('li.mobile-buiucani').click(function () {
+  $(this).find('ul').toggle();
+  $(this).siblings('li').find('ul').hide();
+});
+
+$(' li.mobile-ciocana').click(function () {
+  $("html, body").animate({
+      scrollTop: 0
+  }, "fast");
+  $(this).find('ul').toggle();
+  $(this).siblings('li').find('ul').hide();
+});
+$('li.mobile-postaveche').click(function () {
+  $("html, body").animate({
+      scrollTop: 0
+  }, "fast");
+  $(this).find('ul').toggle();
+  $(this).siblings('li').find('ul').hide();
+});
+$('li.mobile-botanica').click(function () {
+  $("html, body").animate({
+      scrollTop: 0
+  }, "fast");
+  $(this).find('ul').toggle();
+  $(this).siblings('li').find('ul').hide();
+});
+$('li.mobile-cricova').click(function () {
+  $("html, body").animate({
+      scrollTop: 0
+  }, "fast");
+  $(this).find('ul').toggle();
+  $(this).siblings('li').find('ul').hide();
+});
+$('li.mobile-sculeanca').click(function () {
+  $("html, body").animate({
+      scrollTop: 0
+  }, "fast");
+  $(this).find('ul').toggle();
+  $(this).siblings('li').find('ul').hide();
+});
+
+// MOBILE HEADER END
 
 
   // carousels buttons 
