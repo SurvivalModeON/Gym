@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Big Gym Bro-Main Page</title>
+    <title>USEC GYM-Main Page</title>
 
     <link rel="icon" type="image/x-icon" href="img/gymlogo.png">
     <link rel="stylesheet" href="/CSS/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 
@@ -17,6 +17,7 @@
 <body>
     <div class="wrapper">
         <div class="content">
+
             <div class="header">
                 <div class="header_container">
                     <div class="header_first_row header_row">
@@ -111,12 +112,13 @@
                     </div>
                 </div>
             </div>
+
             <div class="mobile_header">
 
                 <div class="mobile_header_container">
                     <div id="dropdown-button" class="dropdown_button" onclick="myFunction()">
-                        <div id="dropdown-button">
-                            <img src="/img/4bars.png" alt="togglebutton">
+                        <div id="dropdown-button" class="rotate-delay">
+                            <img src="/img/4bars.png" alt="dropdwonbutton">
                         </div>
                         <div id="dropdown-button1" class="dropdown_button_1" onclick="myFunction()" style="opacity: 0;"></div>
                     </div>
@@ -130,16 +132,22 @@
 
                 <div id="mobileSideNav" class="mobile_links_container" style="opacity: 0;">
                     <div class="mobile_links">
-                        <div class="mobile_nav_phone_nr">
-                            <img class="mobile_nav_phone_icon" src="/img/phoneimg.png" alt="phone">
-                            <a href="tel:067242877">+373 067 242 877</a>
+                        <div class="mobile_nav_contacts">
+                            <div class="mobile_nav_phone_nr">
+                                <img class="mobile_nav_phone_icon" src="/img/phoneimg.png" alt="phone">
+                                <a href="tel:067242877">+373 067 242 877</a>
+                            </div>
+                            <a href="#">CONTACTE</a>
                         </div>
                         <div class="abonamente_link">
                             <a href="#">ABONAMENTE</a>
                         </div>
                         <ul class="mobile_pages_list">
                             <li class="mobile_pages_list_item mobile-buiucani">
-                                <a class="mobile_pages_list_item_url" href="#"><span>BUIUCANI ▾</span></a>
+                                <div class="mobile_pages_list_item_adress">
+                                    <div>BUIUCANI</div>
+                                    <div class="mobile_red_arrow">▾</div>
+                                </div>
                                 <ul class="mobile_dropdown">
                                     <li><a href="#">Antrenamente - grup</a></li>
                                     <li><a href="#">Despre noi</a></li>
@@ -148,7 +156,10 @@
                                 </ul>
                             </li>
                             <li class="mobile_pages_list_item mobile-ciocana">
-                                <a class="mobile_pages_list_item_url" href="#"><span>CIOCANA ▾</span></a>
+                                <div class="mobile_pages_list_item_adress">
+                                    <div>CIOCANA</div>
+                                    <div class="mobile_red_arrow">▾</div>
+                                </div>
                                 <ul class="mobile_dropdown">
                                     <li><a href="#">Antrenamente - grup</a></li>
                                     <li><a href="#">Despre noi</a></li>
@@ -157,7 +168,10 @@
                                 </ul>
                             </li>
                             <li class="mobile_pages_list_item mobile-postaveche">
-                                <a class="mobile_pages_list_item_url" href="#"><span>POSTA VECHE ▾</span></a>
+                                <div class="mobile_pages_list_item_adress">
+                                    <div>POSTA VECHE</div>
+                                    <div class="mobile_red_arrow">▾</div>
+                                </div>
                                 <ul class="mobile_dropdown">
                                     <li><a href="#">Antrenamente - grup</a></li>
                                     <li><a href="#">Despre noi</a></li>
@@ -166,7 +180,10 @@
                                 </ul>
                             </li>
                             <li class="mobile_pages_list_item mobile-botanica">
-                                <a class="mobile_pages_list_item_url" href="#"><span>BOTANICA ▾</span></a>
+                                <div class="mobile_pages_list_item_adress">
+                                    <div>BOTANICA</div>
+                                    <div class="mobile_red_arrow">▾</div>
+                                </div>
                                 <ul class="mobile_dropdown">
                                     <li><a href="#">Antrenamente - grup</a></li>
                                     <li><a href="#">Despre noi</a></li>
@@ -175,7 +192,10 @@
                                 </ul>
                             </li>
                             <li class="mobile_pages_list_item mobile-cricova">
-                                <a class="mobile_pages_list_item_url" href="#"><span>CRICOVA ▾</span></a>
+                                <div class="mobile_pages_list_item_adress">
+                                    <div>CRICIVA</div>
+                                    <div class="mobile_red_arrow">▾</div>
+                                </div>
                                 <ul class="mobile_dropdown">
                                     <li><a href="#">Antrenamente - grup</a></li>
                                     <li><a href="#">Despre noi</a></li>
@@ -184,7 +204,10 @@
                                 </ul>
                             </li>
                             <li class="mobile_pages_list_item mobile-sculeanca">
-                                <a class="mobile_pages_list_item_url" href="#"><span>SCULEANCA ▾</span></a>
+                                <div class="mobile_pages_list_item_adress">
+                                    <div>SCULEANCA</div>
+                                    <div class="mobile_red_arrow">▾</div>
+                                </div>
                                 <ul class="mobile_dropdown">
                                     <li><a href="#">Antrenamente - grup</a></li>
                                     <li><a href="#">Despre noi</a></li>
@@ -196,6 +219,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="banner_container">
                 <img class="banner_img" src="/img/banner.png" alt="banner">
             </div>
@@ -291,10 +315,12 @@
                 </div>
                 <div class="end_part"></div>
             </div>
+
             <div class="gallery_wrapper">
                 <div class="gallery_header">
                     <a class="text-center" href="#">GYM GALLERY </a>
                 </div>
+
                 <div class="carousel" data-carousel>
                     <button class="carousel-button prev" data-carousel-button="prev"><img src="/img/previousbtn.png" alt=""></button>
                     <button class="carousel-button next" data-carousel-button="next"><img src="/img/nextbtn.png" alt=""></button>
@@ -312,6 +338,7 @@
                 </div>
             </div>
         </div>
+
         <div class="footer">
             <div class="footer_container flex_center_spacea">
                 <div class="footer_left_block flex_center">
@@ -341,8 +368,8 @@
                     <div class="footer_right_block_2row">
                     </div>
                     <div class="footer_right_block_3row">
-                        <div class="footer_right_block_3row_normal_text">Powered by </div>
-                        <div class="footer_right_block_3row_custom_text">price</div>
+                        <div class="footer_right_block_3row_normal_text">Developed by </div>
+                        <div class="footer_right_block_3row_custom_text">Vlad</div>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,10 @@
 
 // MOBILE HEADER START 
+
+$("#dropdown-button").click(function() {
+  $('.rotate-delay').toggleClass('turn-ower-button');
+});
+
 // open and close mobile nav bar
 const targetDiv = document.getElementById("mobileSideNav");
 
