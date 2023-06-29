@@ -1,33 +1,20 @@
-
-//  mobile menu toggle button 
+// open and close mobile nav bar
 const targetDiv = document.getElementById("mobileSideNav");
-const btn = document.getElementById("toggle-button");
-btn.onclick = function () {
+const targetDiv2 = document.getElementById("dropdown-button1");
+
+const btn = document.getElementById("dropdown-button");
+btn.onclick = function myFunction() {
   if (targetDiv.style.display !== "none") {
     targetDiv.style.display = "none";
+    targetDiv2.style.display = "none";
   } else {
     targetDiv.style.display = "block";
+    targetDiv2.style.display = "block";
   }
 };
 
 
-//* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-let dropdown = document.getElementsByClassName("dropdown-btn");
-
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    let dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
-}
-
-// check if display "block" exist, then turn off others
-
+  // carousels buttons 
 const buttons = document.querySelectorAll("[data-carousel-button]")
 
 buttons.forEach(button => {

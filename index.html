@@ -112,10 +112,17 @@
                 </div>
 
             </div>
+
+
             <div class="mobile_header">
                 <div class="mobile_header_container">
-                    <div id="toggle-button" class="toggle_button">
-                        <img src="/img/4bars.png" alt="togglebutton">
+                    <div id="dropdown-button" class="dropdown_button" onclick="myFunction()">
+                        <div id="dropdown-button" class="dropdown_button">
+                            <img src="/img/4bars.png" alt="togglebutton">
+                            <!-- <input type="checkbox" id="btnControl" />
+                            <label id="dropdown-button" class="btn" for="btnControl"><img src="/img/4bars.png" id="dropdown-button" /></label> -->
+                        </div>
+                        <div id="dropdown-button1" class="dropdown_button_1" onclick="myFunction()" style="display: none;"></div>
                     </div>
                     <div class="mobile_header_logo">
                         <img src="/img/gymlogo.png" alt="mobilelogo">
@@ -125,42 +132,62 @@
                     </div>
                 </div>
 
-                <div id="mobileSideNav" class="mobile_nav_wrapper">
-                    <div class="mobile_nav">
 
-                        <div class="mobile_pages_list_container">
-                            <div class="sidenav">
+                <div id="mobileSideNav" class="mobile_links_container" style="display: none;">
+                    <div class="mobile_links">
 
-                                <div class="container">
-                                    <div class="mobile_nav_phone_nr flex_center">
-                                        <img class="mobile_nav_phone_icon" src="/img/phoneimg.png" alt="phone">
-                                        <a href="tel:067242877">+373 067 242 877</a>
-                                    </div>
-                                </div>
-
-                                <div class="container">
-                                    <div class="abonaments_link">
-                                        <a href="#">Abonamente</a>
-                                    </div>
-                                </div>
-
-                                <div class="container">
-                                    <button class="dropdown-btn">BOTANICA<span>▾</span>
-                                    </button>
-                                    <div id="checkStyle" class="dropdown-container">
-                                        <a href="#">Antrenamente de Grup</a>
-                                        <a href="#">Link 2</a>
-                                        <a href="#">Link 3</a>
-                                    </div>
-
-                                </div>
-
-
-                                <a href="#contact">Search</a>
-                            </div>
-                        </div>
+                        <ul class="mobile_pages_list">
+                            <li class="mobile_pages_list_item">
+                                <a class="mobile_pages_list_item_url" href="#"><span>BUIUCANI ▾</span></a>
+                                <ul class="mobile_dropdown">
+                                    <li><a href="#">Antrenamente - grup</a></li>
+                                    <li><a href="#">Despre noi</a></li>
+                                    <li><a href="#">Price-List</a></li>
+                                    <li><a href="#">Contacte</a></li>
+                                </ul>
+                            </li>
+                            <li class="mobile_pages_list_item">
+                                <a class="mobile_pages_list_item_url" href="#"><span>BUIUCANI ▾</span></a>
+                                <ul class="mobile_dropdown">
+                                    <li><a href="#">Antrenamente - grup</a></li>
+                                    <li><a href="#">Despre noi</a></li>
+                                    <li><a href="#">Price-List</a></li>
+                                    <li><a href="#">Contacte</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+
+                <!-- <div id="mobileSideNav" class="mobile_nav_wrapper">
+
+                    <div class="sidenav">
+                        <a href="#">Abonamente</a>
+                        <a href="#">Services</a>
+
+                        <div class="container">
+                            <button class="dropdown-btn">BOTANICA ▾
+                            </button>
+                            <div class="dropdown-container">
+                                <a href="#">Antrenamente de Grup</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <button class="dropdown-btn">BOTANICA ▾
+                            </button>
+                            <div class="dropdown-container">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+
+                        <a href="#contact">Search</a>
+                    </div>
+
+                </div> -->
 
             </div>
             <div class="banner_container">
@@ -272,15 +299,15 @@
                 <div class="carousel" data-carousel>
                     <button class="carousel-button prev" data-carousel-button="prev"><img src="/img/previousbtn.png" alt=""></button>
                     <button class="carousel-button next" data-carousel-button="next"><img src="/img/nextbtn.png" alt=""></button>
-                    <ul class="hajime" data-slides>
+                    <ul class="slide-ul" data-slides>
                         <li class="slide" data-active>
-                            <img src="https://source.unsplash.com/78A265wPiO4" alt="Nature Image #1">
+                            <img src="/img/contact.jpg" alt="Nature Image #1">
                         </li>
                         <li class="slide">
-                            <img src="https://source.unsplash.com/eOpewngf68w" alt="Nature Image #2">
+                            <img src="/img/orar.jpg" alt="Nature Image #2">
                         </li>
                         <li class="slide">
-                            <img src="https://source.unsplash.com/ndN00KmbJ1c" alt="Nature Image #3">
+                            <img src="/img/sportsupp.jpg" alt="Nature Image #3">
                         </li>
                     </ul>
                 </div>
