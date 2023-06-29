@@ -6,11 +6,13 @@ const targetDiv = document.getElementById("mobileSideNav");
 const dropDownBtn = document.getElementById("dropdown-button");
 const dropDownBtn1 = document.getElementById("dropdown-button1");
 dropDownBtn.onclick = function myFunction() {
-  if (targetDiv.style.display !== "none") {
-    targetDiv.style.display = "none";
+  if (targetDiv.style.opacity !== "0") {
+    targetDiv.style.opacity = "0";
+    dropDownBtn1.style.opacity = "0";
     dropDownBtn1.style.display = "none";
   } else {
-    targetDiv.style.display = "block";
+    targetDiv.style.opacity = "1";
+    dropDownBtn1.style.opacity = "1";
     dropDownBtn1.style.display = "block";
   }
 };
@@ -61,7 +63,7 @@ $('li.mobile-sculeanca').click(function () {
 // MOBILE HEADER END
 
 
-  // carousels buttons 
+// carousels buttons 
 const buttons = document.querySelectorAll("[data-carousel-button]")
 
 buttons.forEach(button => {

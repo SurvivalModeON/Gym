@@ -242,6 +242,7 @@ a:visited {
   z-index: -1;
   background: rgba(0, 0, 0, 0.3);
   overflow: hidden;
+  transition: opacity 0.4s;
 }
 
 .mobile_links_container {
@@ -249,6 +250,8 @@ a:visited {
   top: 102px;
   left: 20px;
   z-index: 10;
+  opacity: 0;
+  transition: opacity 0.4s;
 }
 
 @media (min-width: 767px) {
@@ -264,7 +267,7 @@ a:visited {
 }
 
 .mobile_links {
-  min-width: 220px;
+  min-width: 230px;
   display: block;
   padding: 0;
   background: rgb(240, 240, 240);
@@ -612,7 +615,7 @@ div.container > div.row {
 /* gallery section start  */
 
 .gallery_wrapper {
-  display: none;
+  /* display: none; */
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -638,7 +641,7 @@ div.container > div.row {
 /* experioment!!!!!!!!!!!!!!!!!!!!!!!!!!!start */
 
 .carousel {
-  min-width: 700px;
+  width: 700px;
   height: 500px;
   position: relative;
 }
