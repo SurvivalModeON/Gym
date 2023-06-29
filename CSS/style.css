@@ -250,8 +250,6 @@ a:visited {
   left: 20px;
   z-index: 10;
 }
-.mobile_links_container {
-}
 
 @media (min-width: 767px) {
   .mobile_links_container {
@@ -269,7 +267,6 @@ a:visited {
   min-width: 220px;
   display: block;
   padding: 0;
-  /* list-style: none; */
   background: rgb(240, 240, 240);
   border-radius: 0 0 5px 5px;
 }
@@ -279,7 +276,6 @@ a:visited {
   justify-content: left;
   align-items: center;
   padding: 10px 0 10px 20px;
-  /* border-bottom: 2px solid rgb(213, 213, 213); */
 }
 
 .mobile_nav_phone_icon {
@@ -499,7 +495,7 @@ div.container > div.row {
     height: 230px;
   }
 }
-/* info block shrink property for every size start */
+/* info block shrink property for every size end */
 /* info block start  */
 
 /* subcscribe conent start */
