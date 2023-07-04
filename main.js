@@ -80,7 +80,7 @@ function mySlider() {
         speed = 600,
         bullets = true,
         auto = true ,
-        time = 30000 ;
+        time = 20000 ;
         
     construction();
     $(window).resize(construction);
@@ -166,7 +166,7 @@ function mySlider() {
         }
 
     }
-    $("#slider-container .arrow , .bullets-container").hover(function(){
+    $("#slider-container .arrow , .bullets-container").click(function(){
       clearInterval(handle);
     },function(){
       handle = setInterval(slideRight, time) ;
