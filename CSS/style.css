@@ -1,5 +1,6 @@
 :root {
   --index: calc(1vw + 1vh);
+  --index-h: calc(100%);
   --darkgrey: #27272a;
   --darkergrey: #1a1818;
   --mainred: #ed1c24;
@@ -24,6 +25,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
 }
 .flex_center {
   display: flex;
@@ -351,14 +357,16 @@ div.container > div.row {
 #slider-container .bullets-container .bullet {
   width: calc(var(--index) * 0.35);
   height: calc(var(--index) * 0.35);
+  min-width: 5px;
+  min-height: 5px;
   display: inline-block;
   border-radius: 50%;
-  border: 1px solid grey;
+  border: 1px solid var(--dark-border);
   cursor: pointer;
   margin: 0 calc(var(--index) * 0.4);
 }
 #slider-container .bullets-container .bullet.active {
-  background: grey;
+  background: var(--red-bg);
 }
 /* gallery secction end  */
 /* responsive start  */

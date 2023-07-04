@@ -160,8 +160,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 140vh;
+  width: 100%;
+  height: calc(var(--index-h) * 19.49);
   z-index: -1;
   background: rgba(0, 0, 0, 0.3);
   overflow: hidden;
@@ -279,7 +279,6 @@
   color: var(--red-text);
 }
 /* MOBILE NAV END */
-
 /* footer secction start  */
 .footer_container {
   background: var(--dark-bg);
@@ -355,5 +354,9 @@
   }
   .mobile_header {
     display: flex;
+  }
+
+  .footer_about_us_secction {
+    position: initial;
   }
 }
