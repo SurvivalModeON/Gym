@@ -26,11 +26,33 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   min-height: 100%;
   margin: 0;
 }
+
+.wrapper {
+  /* width: 100%;
+  min-height: 100vh; */
+  /* background: #27272a; */
+  /* position: absolute; */
+  /* top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; */
+  /* z-index: 99;
+  background: rgba(0, 0, 0, 0.3); */
+  /* overflow: hidden; */
+}
+
+.content {
+  min-height: 80vh;
+}
+
+body .wrapper .content {
+  flex: 1 0 auto;
+}
+
 .flex_center {
   display: flex;
   justify-content: center;
@@ -281,6 +303,7 @@ div.container > div.row {
   height: 58px;
   padding-right: 10px;
 }
+
 /* subscribe secction end */
 /* gallery section start  */
 .content h2 {
