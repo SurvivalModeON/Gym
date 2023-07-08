@@ -157,18 +157,13 @@
 }
 /* dropdown mobile button */
 .dropdown_button_1 {
-  position: absolute;
-  top: 0;
+  position: fixed;
+  background: rgba(39, 39, 42, 0.4);
   left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  /* height: 100%; */
-  /* overflow-y: auto; */
-  /* flex: 1; */
-  z-index: -1;
-  background: rgba(0, 0, 0, 0.3);
-  /* overflow: hidden; */
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
 }
 .mobile_links_container {
   position: absolute;

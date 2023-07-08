@@ -11,17 +11,18 @@ $("#dropdown-button").click(function() {
 const mobileDropdownNav = document.getElementById("mobile-dropdown-nav");
 
 const dropDownBtn = document.getElementById("dropdown-button");
-const dropDownBtn1 = document.getElementById("dropdown-button1");
+const mobileNavOverlay = document.getElementById("mobile-nav-overlay");
 dropDownBtn.onclick = function myFunction() {
   if (mobileDropdownNav.style.opacity !== "0") {
     mobileDropdownNav.style.opacity = "0";
-    dropDownBtn1.style.display = "none";
+    mobileNavOverlay.style.display = "none";
   } else {
     mobileDropdownNav.style.opacity = "1";
-    dropDownBtn1.style.display = "block";
-    // dropDownBtn1.style.height = `${maxHeight}px`;
+    mobileNavOverlay.style.display = "block";
   }
 };
+
+mobileNavOverlay.onclick = dropDownBtn.onclick
 
 // UL open and close on click
 
