@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div id="wrapper-id" class="wrapper">
         <div class="content">
 
             <div class="header">
@@ -25,7 +25,7 @@
                     <div class="header_first_row header_row">
                         <div class="container header_flex_center">
                             <div class="header_logo">
-                                <a href="#">
+                                <a href="/pages/index.html">
                                     <img class="logo" src="/img/gymlogo.png" alt="GymLogo">
                                 </a>
                             </div>
@@ -35,7 +35,7 @@
                                         <img class="header_contacts_item_icon_phone" src="/img/phoneimg.png" alt="phone">
                                     </div>
                                     <div class="header_contacts_item_text">
-                                        <a class="telephone" href="#">+373 000 000 000</a>
+                                        <a class="telephone" href="#">+373 067 242 877</a>
                                     </div>
                                 </div>
                                 <div class="header_contacts_item header_flex_center">
@@ -56,57 +56,57 @@
                         <div class="container">
                             <ul class="pages_list">
                                 <li class="pages_list_item">
-                                    <a class="pages_list_item_url" href="#"><span>BUIUCANI ▾</span></a>
+                                    <a class="pages_list_item_url"><span>BUIUCANI ▾</span></a>
                                     <ul class="dropdown">
                                         <li><a href="#">Antrenamente - grup</a></li>
                                         <li><a href="#">Despre noi</a></li>
                                         <li><a href="#">Price-List</a></li>
-                                        <li><a href="#">Contacte</a></li>
+                                        <li><a href="/pages/contacte.html">Contacte</a></li>
                                     </ul>
                                 </li>
                                 <li class="pages_list_item">
-                                    <a class="pages_list_item_url" href="#"><span>CIOCANA ▾</span></a>
+                                    <a class="pages_list_item_url"><span>CIOCANA ▾</span></a>
                                     <ul class="dropdown">
                                         <li><a href="#">Antrenamente - grup</a></li>
                                         <li><a href="#">Despre noi</a></li>
                                         <li><a href="#">Price-List</a></li>
-                                        <li><a href="#">Contacte</a></li>
+                                        <li><a href="/pages/contacte.html#gym2">Contacte</a></li>
                                     </ul>
                                 </li>
                                 <li class="pages_list_item">
-                                    <a class="pages_list_item_url" href="#"><span>POSTA VECHE ▾</span></a>
+                                    <a class="pages_list_item_url"><span>POSTA VECHE ▾</span></a>
                                     <ul class="dropdown">
                                         <li><a href="#">Antrenamente - grup</a></li>
                                         <li><a href="#">Despre noi</a></li>
                                         <li><a href="#">Price-List</a></li>
-                                        <li><a href="#">Contacte</a></li>
+                                        <li><a href="/pages/contacte.html#gym3">Contacte</a></li>
                                     </ul>
                                 </li>
                                 <li class="pages_list_item">
-                                    <a class="pages_list_item_url" href="#"><span>BOTANICA ▾</span></a>
+                                    <a class="pages_list_item_url"><span>BOTANICA ▾</span></a>
                                     <ul class="dropdown">
                                         <li><a href="#">Antrenamente - grup</a></li>
                                         <li><a href="#">Despre noi</a></li>
                                         <li><a href="#">Price-List</a></li>
-                                        <li><a href="#">Contacte</a></li>
+                                        <li><a href="/pages/contacte.html#gym4">Contacte</a></li>
                                     </ul>
                                 </li>
                                 <li class="pages_list_item">
-                                    <a class="pages_list_item_url" href="#"><span>CRICOVA ▾</span></a>
+                                    <a class="pages_list_item_url"><span>CRICOVA ▾</span></a>
                                     <ul class="dropdown">
                                         <li><a href="#">Antrenamente - grup</a></li>
                                         <li><a href="#">Despre noi</a></li>
                                         <li><a href="#">Price-List</a></li>
-                                        <li><a href="#">Contacte</a></li>
+                                        <li><a href="/pages/contacte.html#gym5">Contacte</a></li>
                                     </ul>
                                 </li>
                                 <li class="pages_list_item">
-                                    <a class="pages_list_item_url" href="#"><span>SCULEANCA ▾</span></a>
+                                    <a class="pages_list_item_url"><span>SCULEANCA ▾</span></a>
                                     <ul class="dropdown">
                                         <li><a href="#">Antrenamente - grup</a></li>
                                         <li><a href="#">Despre noi</a></li>
                                         <li><a href="#">Price-List</a></li>
-                                        <li><a href="#">Contacte</a></li>
+                                        <li><a href="/pages/contacte.html#gym6">Contacte</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -119,18 +119,20 @@
 
                 <div class="mobile_header_container">
                     <div id="dropdown-button" class="dropdown_button" onclick="myFunction()">
-                        <div id="dropdown-button" class="rotate-delay">
+                        <div class="rotate-delay">
                             <img src="/img/4bars.png" alt="dropdwonbutton">
                         </div>
-                        <div id="dropdown-button1" class="dropdown_button_1" style="display: none;"></div>
                     </div>
                     <div class="mobile_header_logo">
-                        <img src="/img/gymlogo.png" alt="mobilelogo">
+                        <a href="/pages/index.html">
+                            <img src="/img/gymlogo.png" alt="mobilelogo">
+                        </a>
                     </div>
                     <div class="mobile_header_language_button">
                         <a class="language_button" href="#">RO</a>
                     </div>
                 </div>
+                <div id="mobile-nav-overlay" class="dropdown_button_1" style="display: none;" onclick="myFunction()"></div>
 
                 <div id="mobile-dropdown-nav" class="mobile_links_container" style="opacity: 0;">
                     <div class="mobile_links">
@@ -139,7 +141,7 @@
                                 <img class="mobile_nav_phone_icon" src="/img/phoneimg.png" alt="phone">
                                 <a href="tel:067242877">+373 067 242 877</a>
                             </div>
-                            <a href="#">CONTACTE</a>
+                            <a href="/pages/contacte.html">CONTACTE</a>
                         </div>
                         <div class="abonamente_link">
                             <a href="#">ABONAMENTE</a>
@@ -154,7 +156,7 @@
                                     <li><a href="#">Antrenamente - grup</a></li>
                                     <li><a href="#">Despre noi</a></li>
                                     <li><a href="#">Price-List</a></li>
-                                    <li><a href="#">Contacte</a></li>
+                                    <li><a href="/pages/contacte.html">Contacte</a></li>
                                 </ul>
                             </li>
                             <li class="mobile_pages_list_item mobile-ciocana">
@@ -166,7 +168,7 @@
                                     <li><a href="#">Antrenamente - grup</a></li>
                                     <li><a href="#">Despre noi</a></li>
                                     <li><a href="#">Price-List</a></li>
-                                    <li><a href="#">Contacte</a></li>
+                                    <li><a href="/pages/contacte.html#gym2">Contacte</a></li>
                                 </ul>
                             </li>
                             <li class="mobile_pages_list_item mobile-postaveche">
@@ -178,7 +180,7 @@
                                     <li><a href="#">Antrenamente - grup</a></li>
                                     <li><a href="#">Despre noi</a></li>
                                     <li><a href="#">Price-List</a></li>
-                                    <li><a href="#">Contacte</a></li>
+                                    <li><a href="/pages/contacte.html#gym3">Contacte</a></li>
                                 </ul>
                             </li>
                             <li class="mobile_pages_list_item mobile-botanica">
@@ -190,7 +192,7 @@
                                     <li><a href="#">Antrenamente - grup</a></li>
                                     <li><a href="#">Despre noi</a></li>
                                     <li><a href="#">Price-List</a></li>
-                                    <li><a href="#">Contacte</a></li>
+                                    <li><a href="/pages/contacte.html#gym4">Contacte</a></li>
                                 </ul>
                             </li>
                             <li class="mobile_pages_list_item mobile-cricova">
@@ -202,7 +204,7 @@
                                     <li><a href="#">Antrenamente - grup</a></li>
                                     <li><a href="#">Despre noi</a></li>
                                     <li><a href="#">Price-List</a></li>
-                                    <li><a href="#">Contacte</a></li>
+                                    <li><a href="/pages/contacte.html#gym5">Contacte</a></li>
                                 </ul>
                             </li>
                             <li class="mobile_pages_list_item mobile-sculeanca">
@@ -214,7 +216,7 @@
                                     <li><a href="#">Antrenamente - grup</a></li>
                                     <li><a href="#">Despre noi</a></li>
                                     <li><a href="#">Price-List</a></li>
-                                    <li><a href="#">Contacte</a></li>
+                                    <li><a href="/pages/contacte.html#gym6">Contacte</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -223,58 +225,152 @@
             </div>
 
             <div class="contact_page_container">
-                <div class="contact_page_content">
+                <div class="contact_page_gyms">
                     <div class="actual_page">
-                        <a href="#" class="nav_home_page">Pagina principală &nbsp</a>
+                        <a href="/pages/index.html" class="nav_home_page">Pagina principală &nbsp</a>
                         <div>/&nbsp Contacte</div>
                     </div>
-                    <div class="contace_page_head_text">
+                    <div class="contact_page_head_text">
                         <div>Contacte</div>
                     </div>
+                    <hr id="gym1">
+                    <div class="contact_page_gym">
 
-                    <div class="contacte_page_address_map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7877932.0790117!2d13.445363130464!3d15.395618251784907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10e73978bd677361%3A0x3b60835bcec0809c!2z0KfQsNC0!5e0!3m2!1sru!2s!4v1688475089034!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="contact_page_address_map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7877932.0790117!2d13.445363130464!3d15.395618251784907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10e73978bd677361%3A0x3b60835bcec0809c!2z0KfQsNC0!5e0!3m2!1sru!2s!4v1688475089034!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <div class="contact_bottom_info">
+                            <div>USEC GYM BUIUCANI</div>
+                            <p class="contact_bottom_info"><strong>Adresa:</strong> Chișinău, str. Love Frontend 1</p>
+                            <p class="contact_bottom_info"><strong>Contacte:</strong> +373 672 428 77</p>
+                            <p class="contact_bottom_info"><strong>Grafic de lucru:</strong><br>
+                                <strong>Luni-Vineri:</strong> 7:00 - 23:00 <br>
+                                <strong>Sambăta-Duminica:</strong> 9:00 - 20:00
+                            </p>
+                        </div>
                     </div>
+                    <hr id="gym2">
+                    <div class="contact_page_gym">
 
-                    <div class="contace_bottom_text">
-                        <div>GYM USEC</div>
+                        <div class="contact_page_address_map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7877932.0790117!2d13.445363130464!3d15.395618251784907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10e73978bd677361%3A0x3b60835bcec0809c!2z0KfQsNC0!5e0!3m2!1sru!2s!4v1688475089034!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <div class="contact_bottom_info">
+                            <div>USEC GYM CIOCANA</div>
+                            <p class="contact_bottom_info"><strong>Adresa:</strong> Chișinău, str. Love Frontend 22</p>
+                            <p class="contact_bottom_info"><strong>Contacte:</strong> +373 672 428 77</p>
+                            <p class="contact_bottom_info"><strong>Grafic de lucru:</strong><br>
+                                <strong>Luni-Vineri:</strong> 7:00 - 23:00 <br>
+                                <strong>Sambăta-Duminica:</strong> 9:00 - 20:00
+                            </p>
+                        </div>
+                    </div>
+                    <hr id="gym3">
+                    <div class="contact_page_gym">
+
+                        <div class="contact_page_address_map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7877932.0790117!2d13.445363130464!3d15.395618251784907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10e73978bd677361%3A0x3b60835bcec0809c!2z0KfQsNC0!5e0!3m2!1sru!2s!4v1688475089034!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <div class="contact_bottom_info">
+                            <div>USEC GYM POSTA VECHE</div>
+                            <p class="contact_bottom_info"><strong>Adresa:</strong> Chișinău, str. Love Frontend 44</p>
+                            <p class="contact_bottom_info"><strong>Contacte:</strong> +373 672 428 77</p>
+                            <p class="contact_bottom_info"><strong>Grafic de lucru:</strong><br>
+                                <strong>Luni-Vineri:</strong> 7:00 - 23:00 <br>
+                                <strong>Sambăta-Duminica:</strong> 9:00 - 20:00
+                            </p>
+                        </div>
+                    </div>
+                    <hr id="gym4">
+                    <div class="contact_page_gym">
+
+                        <div class="contact_page_address_map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7877932.0790117!2d13.445363130464!3d15.395618251784907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10e73978bd677361%3A0x3b60835bcec0809c!2z0KfQsNC0!5e0!3m2!1sru!2s!4v1688475089034!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <div class="contact_bottom_info">
+                            <div>USEC GYM BOTANICA</div>
+                            <p class="contact_bottom_info"><strong>Adresa:</strong> Chișinău, str. Love Frontend 66</p>
+                            <p class="contact_bottom_info"><strong>Contacte:</strong> +373 672 428 77</p>
+                            <p class="contact_bottom_info"><strong>Grafic de lucru:</strong><br>
+                                <strong>Luni-Vineri:</strong> 7:00 - 23:00 <br>
+                                <strong>Sambăta-Duminica:</strong> 9:00 - 20:00
+                            </p>
+                        </div>
+                    </div>
+                    <hr id="gym5">
+                    <div class="contact_page_gym">
+
+                        <div class="contact_page_address_map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7877932.0790117!2d13.445363130464!3d15.395618251784907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10e73978bd677361%3A0x3b60835bcec0809c!2z0KfQsNC0!5e0!3m2!1sru!2s!4v1688475089034!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <div class="contact_bottom_info">
+                            <div>USEC GYM CRICOVA</div>
+                            <p class="contact_bottom_info"><strong>Adresa:</strong> Chișinău, str. Love Frontend 88</p>
+                            <p class="contact_bottom_info"><strong>Contacte:</strong> +373 672 428 77</p>
+                            <p class="contact_bottom_info"><strong>Grafic de lucru:</strong><br>
+                                <strong>Luni-Vineri:</strong> 7:00 - 23:00 <br>
+                                <strong>Sambăta-Duminica:</strong> 9:00 - 20:00
+                            </p>
+                        </div>
+                    </div>
+                    <hr id="gym6">
+                    <div class="contact_page_gym">
+
+                        <div class="contact_page_address_map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7877932.0790117!2d13.445363130464!3d15.395618251784907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10e73978bd677361%3A0x3b60835bcec0809c!2z0KfQsNC0!5e0!3m2!1sru!2s!4v1688475089034!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <div class="contact_bottom_info">
+                            <div>USEC GYM SCULEANCA</div>
+                            <p class="contact_bottom_info"><strong>Adresa:</strong> Chișinău, str. Love Frontend 100</p>
+                            <p class="contact_bottom_info"><strong>Contacte:</strong> +373 672 428 77</p>
+                            <p class="contact_bottom_info"><strong>Grafic de lucru:</strong><br>
+                                <strong>Luni-Vineri:</strong> 7:00 - 23:00 <br>
+                                <strong>Sambăta-Duminica:</strong> 9:00 - 20:00
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
 
         </div>
-        <div class="footer">
-            <div class="footer_container flex_center_spacea">
-                <div class="footer_left_block flex_center">
-                    <div class="footer_logo">
-                        <a href="#">
-                            <img class="footer_logo_img" src="/img/gymlogo.png" alt="GymLogo">
-                        </a>
-                    </div>
-                    <div class="footer_about_us_secction">
-                        <a class="footer_about_us_secction_contacte" href="#">CONTACTE</a>
-                        <a class="footer_about_us_secction_regulament" href="#">REGULAMENT</a>
-                    </div>
+    </div>
+    <div class="footer">
+        <div class="footer_container flex_center_spacea">
+            <div class="footer_left_block flex_center">
+                <div class="footer_logo">
+                    <a href="#">
+                        <img class="footer_logo_img" src="/img/gymlogo.png" alt="GymLogo">
+                    </a>
                 </div>
-                <div class="footer_center_block">
-                    <div class="footer_center_block_top_text font_family_roboto_sans">
-                        <div class="work_days">Luni - Vineri</div>
-                        <div class="work_hours">07:00-23:00</div>
-                    </div>
-                    <div class="footer_center_block_bot_text font_family_roboto_sans">
-                        <div class="work_days">Sâmbătă - Duminică</div>
-                        <div class="work_hours">09:00-20:00</div>
-                    </div>
+                <div class="footer_about_us_secction">
+                    <a class="footer_about_us_secction_contacte" href="/pages/contacte.html">CONTACTE</a>
+                    <a class="footer_about_us_secction_regulament" href="#">REGULAMENT</a>
                 </div>
-                <div class="footer_right_block">
-                    <div class="footer_right_block_1row">
-                    </div>
-                    <div class="footer_right_block_2row">
-                    </div>
-                    <div class="footer_right_block_3row">
-                        <div class="footer_right_block_3row_normal_text">Developed by </div>
-                        <div class="footer_right_block_3row_custom_text">Vlad</div>
-                    </div>
+            </div>
+            <div class="footer_center_block">
+                <div class="footer_center_block_top_text font_family_roboto_sans">
+                    <div class="work_days">Luni - Vineri</div>
+                    <div class="work_hours">07:00-23:00</div>
+                </div>
+                <div class="footer_center_block_bot_text font_family_roboto_sans">
+                    <div class="work_days">Sâmbătă - Duminică</div>
+                    <div class="work_hours">09:00-20:00</div>
+                </div>
+            </div>
+            <div class="footer_right_block">
+                <div class="footer_right_block_1row">
+                </div>
+                <div class="footer_right_block_2row">
+                </div>
+                <div class="footer_right_block_3row">
+                    <div class="footer_right_block_3row_normal_text">Developed by </div>
+                    <div class="footer_right_block_3row_custom_text">Vlad</div>
                 </div>
             </div>
         </div>

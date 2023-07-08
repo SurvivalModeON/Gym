@@ -6,6 +6,10 @@ $("#dropdown-button").click(function() {
   $('.rotate-delay').toggleClass('turn-ower-button');
 });
 
+$("#mobile-nav-overlay").click(function() {
+    $('.rotate-delay').toggleClass('turn-ower-button');
+  });
+
 // open and close mobile nav bar
 
 const mobileDropdownNav = document.getElementById("mobile-dropdown-nav");
@@ -147,7 +151,7 @@ function mySlider() {
 
     function slideLeft() {
         let imgContainerLeft = parseInt($('.images-container').css('margin-left'));
-        clearInterval(slideRight, 3000);
+        clearInterval(slideRight, 10000);
         if (flag) {
             if (imgContainerLeft == 0 ) {
                 index = index + (imgNumber - 1);

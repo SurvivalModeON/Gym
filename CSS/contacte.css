@@ -1,9 +1,17 @@
 .contact_page_container {
+  min-width: 100%;
+  min-height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
+
+.contact_page_gyms {
+  min-height: 100%;
+}
+
+/* info head start  */
 
 .actual_page {
   display: flex;
@@ -22,12 +30,22 @@
   color: var(--red-text);
 }
 
-.contace_page_head_text div {
+.contact_page_head_text {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 2rem;
 }
 
-/* .contacte_page_address_map iframe {
-  width: calc(var(--index) * 25);
-  max-height: 300px;
-} */
+/* info head end  */
+
+.contact_bottom_info div {
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--red-text);
+  font-size: 2.5rem;
+}
+
+.contact_page_address_map iframe {
+  min-width: 330px;
+  width: calc(var(--index) * 27);
+  min-height: 280px;
+  height: calc(var(--index) * 14);
+}

@@ -1,6 +1,5 @@
 :root {
   --index: calc(1vw + 1vh);
-  --index-h: calc(100%);
   --darkgrey: #27272a;
   --darkergrey: #1a1818;
   --mainred: #ed1c24;
@@ -26,22 +25,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  height: 100%;
+}
+
 body {
   min-height: 100%;
   margin: 0;
+
+  display: grid;
+  /* align-content: space-between; */
 }
 
 .wrapper {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
 }
-
 .content {
-  min-height: 80vh;
-}
-
-body .wrapper .content {
-  flex: 1 0 auto;
+  min-height: 100%;
 }
 
 .flex_center {
