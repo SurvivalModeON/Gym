@@ -1,4 +1,9 @@
-
+// $(function(){
+//     $("#for-header").load("/pages/header-footer/header.html"); 
+//   });
+// $(function(){
+//     $("#for-footer").load("/pages/header-footer/footer.html"); 
+//   });
 // MOBILE HEADER START 
 
 // mobile dropdown icon rotation
