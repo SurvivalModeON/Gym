@@ -158,7 +158,7 @@
   color: var(--red-text);
 }
 /* dropdown mobile button */
-.dropdown_button_1 {
+.mobile_nav_overlay {
   position: fixed;
   background: rgba(39, 39, 42, 0.4);
   left: 0;
@@ -166,15 +166,18 @@
   width: 100vw;
   height: 100vh;
   z-index: 2;
+  pointer-events: none;
 }
+
 .mobile_links_container {
   position: absolute;
   top: 102px;
   left: 20px;
   z-index: 10;
-  opacity: 0;
-  transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
 }
+
 @media (min-width: 767px) {
   .mobile_links_container {
     left: 70px;
