@@ -34,47 +34,10 @@ mobileNavOverlay.onclick = dropDownBtn.onclick
 
 // UL open and close on click
 
-$('li.mobile-buiucani').click(function () {
+$('li.mobile-dropdown-list').click(function () {
   $(this).find('ul').toggle();
   $(this).siblings('li').find('ul').hide();
 });
-
-$(' li.mobile-ciocana').click(function () {
-  $("html, body").animate({
-      scrollTop: 0
-  }, "fast");
-  $(this).find('ul').toggle();
-  $(this).siblings('li').find('ul').hide();
-});
-$('li.mobile-postaveche').click(function () {
-  $("html, body").animate({
-      scrollTop: 0
-  }, "fast");
-  $(this).find('ul').toggle();
-  $(this).siblings('li').find('ul').hide();
-});
-$('li.mobile-botanica').click(function () {
-  $("html, body").animate({
-      scrollTop: 0
-  }, "fast");
-  $(this).find('ul').toggle();
-  $(this).siblings('li').find('ul').hide();
-});
-$('li.mobile-cricova').click(function () {
-  $("html, body").animate({
-      scrollTop: 0
-  }, "fast");
-  $(this).find('ul').toggle();
-  $(this).siblings('li').find('ul').hide();
-});
-$('li.mobile-sculeanca').click(function () {
-  $("html, body").animate({
-      scrollTop: 0
-  }, "fast");
-  $(this).find('ul').toggle();
-  $(this).siblings('li').find('ul').hide();
-});
-
 // MOBILE HEADER END
 
 
