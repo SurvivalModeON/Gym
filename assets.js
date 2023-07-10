@@ -5,5 +5,3 @@
 // $(function () {
 //     $("#for-footer").load("/pages/footer.html");
 // });
-
-// // 
