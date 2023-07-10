@@ -8,7 +8,7 @@
   flex-direction: column;
 }
 .actual_page {
-  width: calc(var(--index) * 27);
+  width: 70%;
 }
 
 .actual_page {
@@ -30,37 +30,41 @@
 
 .contact_page_head_text {
   display: flex;
-  width: calc(var(--index) * 27);
+  width: 70%;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: calc(var(--index) * 1.6);
+}
+@media (max-width: 576px) {
+  .contact_page_head_text {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1199px) {
+  .contact_page_head_text {
+    font-size: 2rem;
+  }
 }
 /* actual page content end  */
 
-.contact_page_container {
-  min-width: 100%;
-  min-height: 100%;
+.orar_antrenamente_grup {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: gray;
 }
 
-/* info head start  */
-
-.contact_page_gyms {
-  min-height: 100%;
+.orar_antrenamente_grup_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.contact_bottom_info div {
-  font-family: "Bebas Neue", sans-serif;
-  color: var(--red-text);
-  font-size: 2.5rem;
+.orar_antrenamente_grup_container img {
+  width: 90%;
+  height: auto;
+  max-height: 1000px;
+  /* width: calc(var(--index) * 27);
+  height: calc(var(--index) * 27); */
 }
-
-.contact_page_address_map iframe {
-  min-width: 330px;
-  width: calc(var(--index) * 27);
-  min-height: 280px;
-  height: calc(var(--index) * 14);
-}
-/* info head end  */
