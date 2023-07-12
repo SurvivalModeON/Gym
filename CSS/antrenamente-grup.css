@@ -60,7 +60,7 @@
 
 .hero-section {
   align-items: flex-start;
-  background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);
+  /* background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%); */
   display: flex;
   min-height: 100%;
   justify-content: center;
@@ -87,13 +87,9 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (min-width: 1199px) {
-  .card-grid {
-    grid-template-columns: repeat(6, 1fr);
-  }
-}
 
 .card {
+  max-height: 300px;
   list-style: none;
   position: relative;
 }
