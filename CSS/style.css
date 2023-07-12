@@ -135,7 +135,7 @@ div.container > div.row {
   transition: 0.35s;
 }
 
-@media (min-width: 1199px) {
+@media (min-width: 1500px) {
   .info_block {
     max-width: 350px;
     margin: 0 auto 30px;
