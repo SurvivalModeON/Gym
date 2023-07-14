@@ -46,102 +46,64 @@
 }
 /* actual page content end  */
 
-:root {
-  --background-dark: #2d3548;
-  --text-light: rgba(255, 255, 255, 0.6);
-  --text-lighter: rgba(255, 255, 255, 0.9);
-  --spacing-s: 8px;
-  --spacing-m: 16px;
-  --spacing-l: 24px;
-  --spacing-xl: 32px;
-  --spacing-xxl: 64px;
-  --width-container: 1200px;
-}
-
-.hero-section {
-  align-items: flex-start;
-  /* background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%); */
+.antrenamente_gallery {
+  width: auto;
   display: flex;
-  min-height: 100%;
   justify-content: center;
-  padding: var(--spacing-xxl) var(--spacing-l);
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 30px;
+  /* box-shadow: 5px 20px 60px 10px Gray; */
 }
 
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-column-gap: var(--spacing-l);
-  grid-row-gap: var(--spacing-l);
-  max-width: var(--width-container);
-  width: 100%;
+.antrenamente_gallery_adress {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
 }
-
-@media (min-width: 540px) {
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
+.antrenamente_gallery_adress > div {
+  width: 100px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 720px) {
+  .antrenamente_gallery_adress > div {
+    width: 170px;
   }
 }
-
-@media (min-width: 960px) {
-  .card-grid {
-    grid-template-columns: repeat(3, 1fr);
+@media (max-width: 400px) {
+  .antrenamente_gallery_adress > div {
+    width: 120px;
   }
 }
-
-.card {
-  max-height: 300px;
-  list-style: none;
-  position: relative;
+.antrenamente_gallery_adress > div > img {
+  width: 100px;
+  height: 70px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.antrenamente_gallery_adress > div > img:hover {
+  border: 1px solid red;
+  scale: 1.15;
 }
 
-.card:before {
-  content: "";
+.antrenamente_gallery_adress > div > div {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.antrenamente_gallery_big_img {
+  width: 90%;
+  max-width: 900px;
+  height: 90%;
+  max-height: 900px;
   display: block;
-  padding-bottom: 150%;
-  width: 100%;
-}
-
-.card__background {
-  background-size: cover;
-  background-position: center;
-  border-radius: var(--spacing-l);
-  bottom: 0;
-  filter: brightness(0.75) saturate(1.2) contrast(0.85);
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transform-origin: center;
-  transform: scale(1) translateZ(0);
-  transition: filter 200ms linear, transform 200ms linear;
-}
-
-.card:hover .card__background {
-  transform: scale(1.05) translateZ(0);
-}
-
-.card-grid:hover > .card:not(:hover) .card__background {
-  filter: brightness(0.3);
-}
-
-.card__content {
-  left: 0;
-  padding: var(--spacing-l);
-  position: absolute;
-  top: 0;
-}
-
-.card__category {
-  color: var(--text-light);
-  font-size: 0.9rem;
-  margin-bottom: var(--spacing-s);
-  text-transform: uppercase;
-}
-
-.card__heading {
-  color: var(--text-lighter);
-  font-size: 1.9rem;
-  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
-  line-height: 1.4;
-  word-spacing: 100vw;
 }
