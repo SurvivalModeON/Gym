@@ -155,6 +155,16 @@ div.container > div.row {
   transition: 0.35s;
 }
 
+@media (min-width: 360px) {
+  .info_block {
+    max-width: 180px;
+    margin: 0 auto 30px;
+  }
+
+  .info_block .info_block_img {
+    height: 120px;
+  }
+}
 @media (min-width: 400px) {
   .info_block {
     max-width: 200px;
