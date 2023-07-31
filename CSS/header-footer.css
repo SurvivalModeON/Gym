@@ -178,7 +178,7 @@
   color: var(--red-text);
   position: absolute;
   /* top: 0; */
-  left: -50px;
+  /* left: -50px; */
   /* bottom: 0; */
   margin-right: 30px;
 }
