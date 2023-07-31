@@ -1,0 +1,58 @@
+.about-us-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.about-us-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  max-width: 950px;
+}
+
+@media (min-width: 300px) {
+  .about-us-content {
+    max-width: 350px;
+  }
+}
+@media (min-width: 550px) {
+  .about-us-content {
+    max-width: 470px;
+  }
+}
+@media (min-width: 800px) {
+  .about-us-content {
+    max-width: 670px;
+  }
+}
+@media (min-width: 1090px) {
+  .about-us-content {
+    max-width: 950px;
+  }
+}
+
+.about-us-first-img {
+  width: 350px;
+  height: 300px;
+  float: right;
+  padding: 8px;
+  border-radius: 20px;
+}
+
+.about-us-second-img {
+  width: 350px;
+  height: 300px;
+  float: left;
+  padding: 8px;
+  border-radius: 20px;
+}
+
+.about-us-mid-secction iframe {
+  min-width: 330px;
+  width: calc(var(--index) * 30);
+  min-height: 280px;
+  height: calc(var(--index) * 17);
+}
