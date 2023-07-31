@@ -1,14 +1,22 @@
 /* actual page content start  */
-.nav_actual_page {
+.nav_actual_container {
   min-width: 100%;
   min-height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
-.actual_page {
-  width: calc(var(--index) * 27);
+
+.nav_actual_page {
+  width: 1000px;
+  max-width: 90%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.nav_actual_page > div {
+  position: relative;
+  left: 15px;
 }
 
 .actual_page {
@@ -30,7 +38,6 @@
 
 .contact_page_head_text {
   display: flex;
-  width: calc(var(--index) * 27);
   font-weight: bold;
   font-size: 2rem;
 }
