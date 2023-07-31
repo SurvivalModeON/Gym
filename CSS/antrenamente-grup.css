@@ -83,6 +83,8 @@
   padding: 3px 2px;
 
   z-index: 2;
+
+  white-space: nowrap;
 }
 
 .antrenamente_gallery_adress > div:hover > div {
