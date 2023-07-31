@@ -1,0 +1,120 @@
+.price-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--red-text);
+  font-size: 2.5rem;
+}
+
+/* Styles for the pricing cards container */
+.pricing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* Styles for the pricing cards */
+.card {
+  display: flex;
+  justify-content: space-evenly;
+
+  position: relative;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+
+  box-shadow: 1px 1px 4px rgb(130, 130, 130) inset;
+
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale3d(1.1, 1.1, 1.1);
+  border: 1px solid red;
+
+  box-shadow: 2px 2px 4px rgb(130, 130, 130) inset;
+  box-shadow: 2px 2px 4px 2px rgb(130, 130, 130);
+}
+
+/* Styles for the pricing cards heading */
+.card h2 {
+  margin-bottom: 0;
+  font-size: 32px;
+  font-weight: 600;
+  color: black;
+  pointer-events: none;
+}
+.card p {
+  margin-bottom: 0;
+  font-size: 17px;
+  font-weight: 600;
+  color: black;
+  pointer-events: none;
+}
+
+/* Styles for the pricing cards price-container */
+/* .card .price-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  font-weight: 600;
+  color: #007bff;
+} */
+.card .price-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+
+  border: 2px solid #ed1d25;
+  border-radius: 5px;
+  transform: skewX(-30deg);
+  padding: 5px 40px;
+
+  pointer-events: none;
+}
+
+.card .price-container .price {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #333;
+  margin-left: 5px;
+  transform: skewX(30deg);
+  font-weight: 600;
+  color: #333;
+}
+
+/* Styles for the pricing cards features list */
+.card ul {
+  text-align: left;
+  list-style: initial;
+  margin-bottom: 0;
+  pointer-events: none;
+}
+.card ul li:first-child {
+  font-size: 18px;
+  text-align: center;
+  list-style: none;
+}
+
+.card ul li {
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--dark-bg);
+}
+
+.price-ul-antrenamente-grup li a {
+  color: red;
+  pointer-events: all;
+}
