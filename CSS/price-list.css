@@ -60,14 +60,7 @@
 }
 
 /* Styles for the pricing cards price-container */
-/* .card .price-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 48px;
-  font-weight: 600;
-  color: #007bff;
-} */
+
 .card .price-container {
   display: flex;
   justify-content: center;
@@ -87,7 +80,6 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 24px;
   font-weight: 400;
-  color: #333;
   margin-left: 5px;
   transform: skewX(30deg);
   font-weight: 600;
