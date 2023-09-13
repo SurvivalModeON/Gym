@@ -3,7 +3,7 @@ const productsContainer = document.querySelector("#products-container");
 getProducts();
 
 async function getProducts() {
-  const response = await fetch("./js/products.json");
+  const response = await fetch("./JS/products.json");
   const productsArray = await response.json();
   renderProducts(productsArray);
 }
