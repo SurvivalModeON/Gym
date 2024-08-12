@@ -41,11 +41,11 @@ async function getLocation() {
 	try {
 		const res = await fetch("https://ipapi.co/json/");
 		const data = await res.json();
-		console.log(data);
+		// console.log(data);
 
 		const userLocation = data;
 		let message = `${datetime}\nTimesReturned: ${TIMES_RETURNED}\nUniqueName: ${uniqueName}\nWebsite: Gym\nLocation: ${userLocation.city}\nCountry: ${userLocation.country_name}`;
-		console.log(message);
+		// console.log(message);
 		return message;
 	} catch (error) {
 		console.error('Error fetching location:', error);
