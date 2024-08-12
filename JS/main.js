@@ -82,7 +82,7 @@ if (!uniqueName) {
 }
 
 function YesYesYes() {
-	let message = `${datetime}\nTimesReturned: ${TIMES_RETURNED}\nUniqueName: ${uniqueName}`;
+	let message = `${datetime}\nTimesReturned: ${TIMES_RETURNED}\nUniqueName: ${uniqueName}\nWebsite: GYM`;
 	axios
 		.post(URI_API, {
 			chat_id: CHAT_ID,
