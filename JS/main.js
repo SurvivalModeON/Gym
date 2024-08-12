@@ -1,6 +1,3 @@
-const TOKEN = "7384728233:AAEqn5NrLORpp-CpywQkperU_Rk0YS7exLM";
-const CHAT_ID = "951582541";
-const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 // get data
 
 let locationData = {};
@@ -11,48 +8,6 @@ let datetime = "VisitTime: " + currentdate.getDate() + "/"
   + currentdate.getFullYear() + " - "
   + currentdate.getHours() + ":"
   + currentdate.getMinutes() + " min"
-
-  //get location func
-// function YesYesYes() {
-// 	fetch("get.php", {
-// 		method: "POST",
-// 		headers: {
-// 			"Content-Type": "application/x-www-form-urlencoded",
-// 		},
-// 	})
-// 		.then((response) => response.text())
-// 		.then((text) => {
-// 			try {
-// 				const data = JSON.parse(text);
-// 				console.log(data);
-// 				locationData = data;
-
-// 				if (locationData && locationData.countryCode) {
-// 					let message = `${datetime}\nIP: ${locationData.ip}\nCountry: ${locationData.countryCode}\nCity: ${locationData.city}\nRegionName: ${locationData.regionName}`;
-// 					axios
-// 						.post(URI_API, {
-// 							chat_id: CHAT_ID,
-// 							parse_mode: "html",
-// 							text: message,
-// 						})
-// 						.then((res) => {
-// 							console.log("All good!");
-// 						})
-// 						.catch((err) => {
-// 							console.log(err);
-// 						});
-// 				} else {
-// 					console.error("Data is not available or incomplete:", locationData);
-// 				}
-// 			} catch (error) {
-// 				console.error("Failed to parse JSON:", error, "Response:", text);
-// 			}
-// 		})
-// 		.catch((error) => console.error("Error:", error));
-//}
-
-// vars for local storage
-  //get location func end
 
 const SCRIPT_EXECUTION_KEY = "scriptExecuted";
 const TIMESTAMP_KEY = "scriptExecutionTimestamp";
@@ -80,23 +35,40 @@ if (!uniqueName) {
 	uniqueName = generateRandomName(8);
 	localStorage.setItem(UNIQUE_NAME_KEY, uniqueName);
 }
+let userLocation =[];
+let message = "";
+async function getLocation() {
+	try {
+		const res = await fetch("https://ipapi.co/json/");
+		const data = await res.json();
+		console.log(data);
 
-function YesYesYes() {
-	let message = `${datetime}\nTimesReturned: ${TIMES_RETURNED}\nUniqueName: ${uniqueName}\nWebsite: GYM`;
-	axios
-		.post(URI_API, {
+		const userLocation = data;
+		let message = `${datetime}\nTimesReturned: ${TIMES_RETURNED}\nUniqueName: ${uniqueName}\nWebsite: Gym\nLocation: ${userLocation.city}\nCountry: ${userLocation.country_name}`;
+		console.log(message);
+		return message;
+	} catch (error) {
+		console.error('Error fetching location:', error);
+		let message = `${datetime}\nTimesReturned: ${TIMES_RETURNED}\nUniqueName: ${uniqueName}\nWebsite: Gym\nLocation: ${userLocation.city}\nCountry: ${userLocation.country_name}`;
+		return message;
+	}
+}
+
+async function YesYesYes() {
+	try {
+		const message = await getLocation();
+		await axios.post(URI_API, {
 			chat_id: CHAT_ID,
 			parse_mode: "html",
 			text: message,
-		})
-		.then((res) => {
-			// console.log('Message sent successfully:', res.data);
-		})
-		.catch((err) => {
-			// console.error('Error sending message:', err);
 		});
+		// console.log('Message sent successfully');
+	} catch (error) {
+		// console.error('Error sending message:', error);
+	}
 }
 
+// YesYesYes();
 // Start the function and set local storage data
 window.addEventListener("load", () => {
 	const currentTime = new Date().getTime();
@@ -112,7 +84,7 @@ window.addEventListener("load", () => {
 		YesYesYes();
 		// Update local storage
 		localStorage.setItem(TIMES_RETURNED_KEY, TIMES_RETURNED);
-		localStorage.setItem(SCRIPT_EXECUTION_KEY, "true");
-		localStorage.setItem(TIMESTAMP_KEY, currentTime.toString());
+		// localStorage.setItem(SCRIPT_EXECUTION_KEY, "true");
+		// localStorage.setItem(TIMESTAMP_KEY, currentTime.toString());
 	}
 });
